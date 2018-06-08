@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
 
 public class FragmentBefo extends Fragment {
     View view;
@@ -24,11 +26,6 @@ public class FragmentBefo extends Fragment {
 
 
     }
-
-   // public void NewTrip(View view) {
-        //Intent newTrip = new Intent(this,NewTrip.class);
-        //startActivity(newTrip);
-    //}
 
 }
 
