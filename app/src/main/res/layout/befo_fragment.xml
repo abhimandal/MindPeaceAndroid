@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="Start A New Trip"
         android:id="@+id/NewTrip"
-        android:onClick="Newtrip"
+        android:onClick="NewTrip"
         android:textSize="20dp"/>
 
     <Button

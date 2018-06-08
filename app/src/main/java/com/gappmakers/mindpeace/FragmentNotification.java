@@ -8,21 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentHome extends Fragment {
+public class FragmentNotification extends Fragment{
     View view;
-    public FragmentHome() {
-
+    public FragmentNotification() {
     }
     @Nullable
     @Override
-
-
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.home_fragment,container,false);
+        view = inflater.inflate(R.layout.notification_fragment,container,false);
         return view;
-
-
     }
-
 }
-

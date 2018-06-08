@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentTrip extends Fragment {
+public class FragmentFollo extends Fragment {
     View view;
-    public FragmentTrip() {
+    public FragmentFollo() {
     }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.trip_fragment,container,false);
+        view = inflater.inflate(R.layout.follo_fragment,container,false);
         return view;
     }
 }

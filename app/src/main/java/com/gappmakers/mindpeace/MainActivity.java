@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         TABAdapter adapter = new TABAdapter(getSupportFragmentManager());
         //Add Fragments
-        adapter.AddFragment(new FragmentHome(),"Home");
-        adapter.AddFragment(new FragmentTrip(),"Trip");
-        adapter.AddFragment(new FragmentMore(),"More");
+        adapter.AddFragment(new FragmentBefo(),"BEFO");
+        adapter.AddFragment(new FragmentFollo(),"FOLLO");
+        adapter.AddFragment(new FragmentNotification(),"Notification");
         //Add setup
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);

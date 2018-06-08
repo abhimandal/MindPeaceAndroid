@@ -33,17 +33,17 @@ public class TABAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return FragmentListTitles.get(position);
     }
-    public void AddFragment(FragmentTrip fragment, String Title){
+    public void AddFragment(FragmentFollo fragment, String Title){
         fragmentList.add(fragment);
         FragmentListTitles.add(Title);
 
     }
-    public void AddFragment(FragmentHome fragment, String Title){
+    public void AddFragment(FragmentBefo fragment, String Title){
         fragmentList.add(fragment);
         FragmentListTitles.add(Title);
 
     }
-    public void AddFragment(FragmentMore fragment, String Title){
+    public void AddFragment(FragmentNotification fragment, String Title){
         fragmentList.add(fragment);
         FragmentListTitles.add(Title);
 
