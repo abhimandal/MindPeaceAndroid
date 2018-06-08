@@ -1,4 +1,4 @@
-package com.example.yanchao.colortab;
+package com.gappmakers.mindpeace;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.yanchao.colortab", appContext.getPackageName());
+        assertEquals("com.gappmakers.mindpeace", appContext.getPackageName());
     }
 }
