@@ -1,13 +1,10 @@
 package com.gappmakers.mindpeace;
 
-import android.content.Intent;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        TABAdapter adapter = new TABAdapter(getSupportFragmentManager());
         //Add Fragments
         adapter.AddFragment(new FragmentHome(),"Home");
         adapter.AddFragment(new FragmentTrip(),"Trip");
