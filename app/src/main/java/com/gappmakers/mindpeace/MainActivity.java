@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this,NewTrip.class);
                 startActivity(intent);
         }
-        switch(item.getItemId()){
-                case R.id.nav_follo:
-                    Intent intent = new Intent(this,NewTrip.class);
-                    startActivity(intent);
-            }
+//        switch(item.getItemId()){
+//                case R.id.nav_follo:
+//                    Intent intent = new Intent(this,NewTrip.class);
+//                    startActivity(intent);
+//            }
 
 
         return super.onOptionsItemSelected(item);
