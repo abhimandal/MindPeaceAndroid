@@ -36,11 +36,9 @@
         android:background="#303F9F"
         android:onClick="NewTrip"
         android:text="Start A New Trip"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat" />
 
-
-
-
-
-
+    
 </RelativeLayout>

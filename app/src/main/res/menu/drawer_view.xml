@@ -16,8 +16,6 @@
             android:id="@+id/nav_befo"
             android:title="@string/nav_befo"
             android:icon="@drawable/befo"
-
-
             />
         <item
             android:id="@+id/nav_follo"
