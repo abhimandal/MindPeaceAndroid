@@ -1,4 +1,4 @@
-package com.example.yanchao.colortab;
+package com.gappmakers.mindpeace;
 
 import org.junit.Test;
 

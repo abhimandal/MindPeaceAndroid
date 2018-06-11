@@ -1,4 +1,4 @@
-package com.example.yanchao.colortab;
+package com.gappmakers.mindpeace;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FragmentMore extends Fragment{
+public class FragmentNotification extends Fragment{
     View view;
-    public FragmentMore() {
+    public FragmentNotification() {
     }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.more_fragment,container,false);
+        view = inflater.inflate(R.layout.notification_fragment,container,false);
         return view;
     }
 }
