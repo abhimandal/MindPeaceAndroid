@@ -40,5 +40,5 @@
         android:layout_alignParentLeft="true"
         tools:ignore="RtlCompat" />
 
-    
+
 </RelativeLayout>

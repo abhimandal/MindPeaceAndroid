@@ -6,6 +6,8 @@
     <string name="nav_setting">SETTING</string>
     <string name="nav_delete">DELETE </string>
     <string name="nav_about">ABOUT</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
 
 
 
