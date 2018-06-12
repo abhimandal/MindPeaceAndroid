@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         TABAdapter adapter = new TABAdapter(getSupportFragmentManager());
         //Add Fragments
-        adapter.AddFragment(new FragmentNotification(),"Home");
         adapter.AddFragment(new FragmentBefo(),"BEFO");
         adapter.AddFragment(new FragmentFollo(),"FOLLO");
+        adapter.AddFragment(new FragmentNotification(),"Notifications");
 
         //Add setup
         viewPager.setAdapter(adapter);
