@@ -1,5 +1,6 @@
 package com.gappmakers.mindpeace;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
@@ -15,29 +16,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
 
     private TabLayout tabLayout;
-    private AppBarLayout appBarLayout;
     private ViewPager viewPager;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-    FragmentNotification n = new FragmentNotification(this);
-    FragmentBefo b = new FragmentBefo(this);
+    android.support.v4.app.FragmentTransaction ft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       // ft= getSupportFragmentManager().beginTransaction();
+        //ft.add(R.id.framelayout_id, new BlankFragment());
+        //ft.commit();
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
-        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         TABAdapter adapter = new TABAdapter(getSupportFragmentManager());
         //Add Fragments
         adapter.AddFragment(new FragmentNotification(),"Home");
         adapter.AddFragment(new FragmentBefo(),"BEFO");
-        adapter.AddFragment(new FragmentFollo(),"FOLLO");
+       adapter.AddFragment(new FragmentFollo(),"FOLLO");
 
         //Add setup
         viewPager.setAdapter(adapter);
@@ -47,33 +51,54 @@ public class MainActivity extends AppCompatActivity {
        mDrawerLayout.addDrawerListener(mToggle);
        mToggle.syncState();
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         final NavigationView navigation = (NavigationView) findViewById(R.id.nav_view);
         navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id=item.getItemId();
+
                 switch(item.getItemId()) {
                     case R.id.nav_home:
-                        return true;
+                        ft= getSupportFragmentManager().beginTransaction();
+                        ft.replace(R.id.framelayout_id, new FragmentNotification());
+                        ft.commit();
+                        //getSupportActionBar().setTitle("HOME");
+                        item.setChecked(true);
+                        mDrawerLayout.closeDrawers();
+                        break;
                     case R.id.nav_befo:
-                        return true;
+                        ft= getSupportFragmentManager().beginTransaction();
+                        ft.replace(R.id.framelayout_id, new FragmentBefo());
+                        ft.commit();
+                        //getSupportActionBar().setTitle("BEFO");
+                        item.setChecked(true);
+                        mDrawerLayout.closeDrawers();
+                        break;
                     case R.id.nav_follo:
-                        return true;
-                    case R.id.nav_setting:
-                        return true;
-                    case R.id.nav_delete:
-                        return true;
-                    case R.id.nav_about:
-                        return true;
-                    default:
-                        return false;
-                }
+                        ft= getSupportFragmentManager().beginTransaction();
+                        ft.replace(R.id.framelayout_id, new FragmentFollo());
+                        ft.commit();
+                        //getSupportActionBar().setTitle("FOLLO");
+                        item.setChecked(true);
+                        mDrawerLayout.closeDrawers();
+                        break;
 
-              //  if (id == R.id.nav_home) {
-               //     startActivity(new Intent(, FragmentNotification.class));
-               // } else if (id == R.id.nav_befo) {
-               //     startActivity(new Intent(this, FragmentBefo.class));
-               // }
+                   // case R.id.nav_home:
+                     //   return true;
+                    //case R.id.nav_befo:
+                      //  return true;
+                    //case R.id.nav_follo:
+                      //  return true;
+                    //case R.id.nav_setting:
+                      //  return true;
+                    //case R.id.nav_delete:
+                      //  return true;
+                    //case R.id.nav_about:
+                      //  return true;
+                    //default:
+
+                }
+                return false;
             }
         });
     }
