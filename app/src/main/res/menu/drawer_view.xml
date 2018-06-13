@@ -4,24 +4,21 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-
-            android:title="@string/nav_home"
-
-            android:icon="@drawable/home"
-
-            />
-        <item
-            android:id="@+id/nav_befo"
-            android:title="@string/nav_befo"
-            android:icon="@drawable/befo"
-            />
-        <item
-            android:id="@+id/nav_follo"
-            android:title="@string/nav_follo"
-            android:icon="@drawable/follo"
-            />
+        <!--<item-->
+            <!--android:id="@+id/nav_home"-->
+            <!--android:title="@string/nav_home"-->
+            <!--android:icon="@drawable/home"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_befo"-->
+            <!--android:title="@string/nav_befo"-->
+            <!--android:icon="@drawable/befo"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_follo"-->
+            <!--android:title="@string/nav_follo"-->
+            <!--android:icon="@drawable/follo"-->
+            <!--/>-->
         <item
             android:id="@+id/nav_setting"
             android:title="@string/nav_setting"
