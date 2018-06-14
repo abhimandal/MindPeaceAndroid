@@ -1,6 +1,5 @@
 package com.gappmakers.mindpeace;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
@@ -12,19 +11,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
-    private static final int ERROR_DIALOG_REQUEST = 9001;
+
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
     private ViewPager viewPager;
@@ -58,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 int id=item.getItemId();
                 switch(item.getItemId()) {
 //                    case R.id.nav_home:
@@ -86,34 +78,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-        public boolean isServicesOK(){
-        Log.d(TAG, "isServicesOK: checking google services version");
-        int available= GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
-        if(available== ConnectionResult.SUCCESS){
-            Log.d(TAG, "isServicesOK: checking google services is working");
-            return true;
-        }
-        else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
-            Log.d(TAG, "isServicesOK: error occured but can be fixed");
-            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(MainActivity.this,available, ERROR_DIALOG_REQUEST);
-            dialog.show();
-        }
-        else{
-            Toast.makeText(this, "you can't make map request",Toast.LENGTH_SHORT).show();
-        }
-        return false;
-        }
-
         public boolean onOptionsItemSelected (MenuItem item){
 
             if(mToggle.onOptionsItemSelected(item)){return true;}
             return super.onOptionsItemSelected(item);
         }
         public void NewTrip(View view) {
-        if(isServicesOK()) {
-            Intent newTrip = new Intent(this, NewTrip.class);
-            startActivity(newTrip);
-        }
+        Intent newTrip = new Intent(this,NewTrip.class);
+        startActivity(newTrip);
         }
 
 }
