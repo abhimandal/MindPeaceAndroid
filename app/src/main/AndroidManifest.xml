@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gappmakers.mindpeace">
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -28,6 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -46,6 +48,13 @@
         <activity
             android:name=".NewTrip"
             android:label="@string/title_activity_new_trip"></activity>
+=======
+        <activity android:name=".NewTrip"
+            android:parentActivityName=".MainActivity"
+        />
+        <activity android:name=".ContactsFetch"
+            android:parentActivityName=".MainActivity"/>
+>>>>>>> origin/MindPeaceAbhilash
     </application>
 
 </manifest>
