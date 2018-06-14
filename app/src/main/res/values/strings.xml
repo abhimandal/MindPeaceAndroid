@@ -8,7 +8,7 @@
     <string name="nav_about">ABOUT</string>
     <string name="open">OPEN</string>
     <string name="close">CLOSE</string>
-
+    <string name="title_activity_new_trip">Map</string>
 
 
 </resources>
