@@ -39,6 +39,20 @@
         android:layout_alignParentLeft="true"
         android:background="@drawable/buttonshape"
         tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/MapTrip"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:onClick="MapTrip"
+        android:text="Map Trip"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttonshape"
+        tools:ignore="RtlCompat" />
 
 
 </RelativeLayout>
