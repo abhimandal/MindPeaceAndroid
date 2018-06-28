@@ -9,6 +9,9 @@
     <string name="open">OPEN</string>
     <string name="close">CLOSE</string>
     <string name="title_activity_maps">Map</string>
+    <string name="sos">SOS</string>
+    <string name="NewTrip">Start A Trip</string>
+    <string name="MapTrip">Map Trip</string>
 
 
 </resources>
