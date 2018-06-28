@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // this intend should be deleted
+        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(intent);
+
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);

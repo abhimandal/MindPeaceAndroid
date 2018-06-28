@@ -12,6 +12,16 @@
     <string name="sos">SOS</string>
     <string name="NewTrip">Start A Trip</string>
     <string name="MapTrip">Map Trip</string>
+    <string name="logheading">Welcome to MindPeace</string>
+    <string name="logemail">Email</string>
+    <string name="logpassword">Password</string>
+    <string name="logbtn">Login In</string>
+    <string name="regbtn">Register</string>
+    <string name="regheading">Welcome to MindPeace</string>
+    <string name="regemail">Email</string>
+    <string name="regpassword">Password</string>
+    <string name="regbtnreal">Click to Finish</string>
+
 
 
 </resources>
