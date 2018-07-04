@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932626479595",
+    "firebase_url": "https://mindpeace-b4e5a.firebaseio.com",
+    "project_id": "mindpeace-b4e5a",
+    "storage_bucket": "mindpeace-b4e5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932626479595:android:b8245e746c4f728a",
+        "android_client_info": {
+          "package_name": "com.gappmakers.mindpeace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932626479595-lr7h642291bu10avmh7mhod41p5matg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gappmakers.mindpeace",
+            "certificate_hash": "37f7e5579cf001a1eb460614dcec50a4ffc9557b"
+          }
+        },
+        {
+          "client_id": "932626479595-nuacsdgus872dg7olkt7i6htel8qklrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAMvb6SW5jzMFOyUZuvydADmD6QYn88us"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932626479595-nuacsdgus872dg7olkt7i6htel8qklrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
