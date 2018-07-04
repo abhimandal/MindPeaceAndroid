@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_blue"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/logheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/logheading"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/logemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/input_btn"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/logpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/input_btn"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="phone"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/input_btn"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/logbtn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:background="@drawable/input_btn"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/regbtn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+</RelativeLayout>

@@ -10,8 +10,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -30,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // this intend should be deleted
+        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(intent);
+
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
@@ -84,8 +87,12 @@ public class MainActivity extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
         public void NewTrip(View view) {
-        Intent newTrip = new Intent(this,NewTrip.class);
+        Intent newTrip = new Intent(this,NewTrip2.class);
         startActivity(newTrip);
         }
+    public void MapTrip(View view) {
+        Intent MapTrip = new Intent(this,MapsActivity.class);
+        startActivity(MapTrip);
+    }
 
 }

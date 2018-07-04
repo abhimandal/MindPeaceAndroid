@@ -7,37 +7,47 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:text="Current Trip Info"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/sos"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="127dp"
-        android:textColor="#FFFFFF"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/sosbuttonshape"
-        android:text="SOS"
+        android:text="@string/sos"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
         android:id="@+id/NewTrip"
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:textColor="#FFFFFF"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:onClick="NewTrip"
-        android:text="Start A New Trip"
-        android:textSize="20dp"
-        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/buttonshape"
+        android:onClick="NewTrip"
+        android:text="@string/NewTrip"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/MapTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="MapTrip"
+        android:text="@string/MapTrip"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
         tools:ignore="RtlCompat" />
 
 

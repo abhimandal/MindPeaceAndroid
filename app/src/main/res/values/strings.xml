@@ -8,7 +8,19 @@
     <string name="nav_about">ABOUT</string>
     <string name="open">OPEN</string>
     <string name="close">CLOSE</string>
-
+    <string name="title_activity_maps">Map</string>
+    <string name="sos">SOS</string>
+    <string name="NewTrip">Start A Trip</string>
+    <string name="MapTrip">Map Trip</string>
+    <string name="logheading">Welcome to MindPeace</string>
+    <string name="logemail">Email</string>
+    <string name="logpassword">Password</string>
+    <string name="logbtn">Login In</string>
+    <string name="regbtn">Register</string>
+    <string name="regheading">Welcome to MindPeace</string>
+    <string name="regemail">Email</string>
+    <string name="regpassword">Password</string>
+    <string name="regbtnreal">Register</string>
 
 
 </resources>
