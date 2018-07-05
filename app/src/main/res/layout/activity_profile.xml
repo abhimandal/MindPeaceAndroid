@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="101dp"
+        android:gravity="center_horizontal"
         android:text="@string/proHeading"
         android:textColor="#29b6f6"
         android:textSize="22sp" />
+
 </RelativeLayout>

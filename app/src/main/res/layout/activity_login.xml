@@ -35,23 +35,6 @@
         android:paddingTop="15dp"
         android:textSize="22sp" />
 
-    <EditText
-        android:id="@+id/logpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/input_btn"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="phone"
-        android:paddingBottom="15dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:paddingTop="15dp"
-        android:textSize="22sp" />
-
     <Button
         android:id="@+id/logbtn"
         android:layout_width="wrap_content"
@@ -66,17 +49,31 @@
         android:textColor="@color/colorPrimary"
         android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/regbtn"
+    <EditText
+        android:id="@+id/logpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/input_btn"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/toregpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="126dp"
-        android:background="@drawable/input_btn"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="@string/regbtn"
-        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="149dp"
+        android:text="@string/toregpage"
+        android:textColor="#ffffff"
         android:textSize="22sp" />
 </RelativeLayout>
