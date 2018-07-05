@@ -21,6 +21,7 @@
     <string name="regemail">Email</string>
     <string name="regpassword">Password</string>
     <string name="regbtnreal">Register</string>
+    <string name="proHeading">Welcome to MindPeace</string>
 
 
 </resources>

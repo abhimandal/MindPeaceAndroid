@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             //start the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                         else{
                             //display some message here
