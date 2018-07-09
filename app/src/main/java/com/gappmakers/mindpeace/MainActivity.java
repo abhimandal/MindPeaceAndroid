@@ -90,7 +90,13 @@ public class MainActivity extends AppCompatActivity {
         Intent newTrip = new Intent(this,NewTrip2.class);
         startActivity(newTrip);
         }
-    public void MapTrip(View view) {
+
+        public void Sos (View view){
+        Intent sos = new Intent(this,SosActivity.class);
+        startActivity(sos);
+        }
+
+        public void MapTrip(View view) {
         Intent MapTrip = new Intent(this,MapsActivity.class);
         startActivity(MapTrip);
     }

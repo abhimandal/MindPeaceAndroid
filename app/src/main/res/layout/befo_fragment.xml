@@ -15,13 +15,14 @@
         android:layout_marginRight="120dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/sosbuttonshape"
+        android:onClick="Sos"
         android:text="@string/sos"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/NewTrip"
+        android:id="@+id/newtrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -29,12 +30,12 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/buttonshape"
         android:onClick="NewTrip"
-        android:text="@string/NewTrip"
+        android:text="@string/newtrip"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/MapTrip"
+        android:id="@+id/maptrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -45,7 +46,7 @@
         android:layout_marginTop="135dp"
         android:background="@drawable/buttonshape"
         android:onClick="MapTrip"
-        android:text="@string/MapTrip"
+        android:text="@string/maptrip"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         tools:ignore="RtlCompat" />
