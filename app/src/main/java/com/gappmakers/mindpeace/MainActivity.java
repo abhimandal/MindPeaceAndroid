@@ -175,11 +175,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_setting) {
-
+            FragmentSetting front_page_fragment = new FragmentSetting();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_contact) {
+            FragmentContact front_page_fragment = new FragmentContact();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_about) {
+            FragmentAbout front_page_fragment = new FragmentAbout();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
+            fragmentTransaction.commit();
 
         }
 

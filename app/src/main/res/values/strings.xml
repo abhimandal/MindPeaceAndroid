@@ -39,5 +39,12 @@
     <string name="homebtsbefo">START A NEW TRIP</string>
     <string name="homebtsfollo">TRIPS FOLLOWING</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settingheading">Setting Page</string>
+    <string name="contactheading">CONTACT</string>
+    <string name="folloheading">You Are Following</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="aboutheading">ABOUT</string>
 
 </resources>
