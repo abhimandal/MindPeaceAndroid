@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate:1 ");
         // this intend should be deleted
-//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(intent);
 ////
 //        tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
 //        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
