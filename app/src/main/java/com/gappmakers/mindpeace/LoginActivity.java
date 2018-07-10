@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
 
             //and open profile activity
-//            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
         }
 
         mEmail = (EditText) findViewById(R.id.logemail);
@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             //start the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
                         }
                         else{
                             //display some message here

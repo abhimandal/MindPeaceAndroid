@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate:1 ");
         // this intend should be deleted
-        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+//        startActivity(intent);
 ////
 //        tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
 //        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_homepage) {
+        if (id == R.id.nav_home) {
             //--------------------set the initial fragment-------------------
             Home_Fragment front_page_fragment = new Home_Fragment();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -168,13 +168,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_follo) {
+            FragmentFollo front_page_fragment = new FragmentFollo();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
+            fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_setting) {
 
-        } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_contact) {
+
+        } else if (id == R.id.nav_about) {
 
         }
 
