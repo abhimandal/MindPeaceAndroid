@@ -35,6 +35,9 @@
     <string name="sosyes">Yes </string>
     <string name="sosno">No </string>
     <string name="sosheading">SEND SOS ?</string>
+    <string name="homeheading">Hello, Welcome to MindPeace</string>
+    <string name="homebtsbefo">START A NEW TRIP</string>
+    <string name="homebtsfollo">TRIPS FOLLOWING</string>
 
 
 </resources>
