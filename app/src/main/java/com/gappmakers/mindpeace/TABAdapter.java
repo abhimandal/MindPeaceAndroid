@@ -43,7 +43,7 @@ public class TABAdapter extends FragmentPagerAdapter {
         FragmentListTitles.add(Title);
 
     }
-    public void AddFragment(FragmentNotification fragment, String Title){
+    public void AddFragment(Home_Fragment fragment, String Title){
         fragmentList.add(fragment);
         FragmentListTitles.add(Title);
 

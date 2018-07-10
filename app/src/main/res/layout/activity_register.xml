@@ -7,6 +7,23 @@
     android:background="@mipmap/background_blue"
     tools:context=".RegisterActivity">
 
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/input_btn"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:textSize="22sp" />
+
     <TextView
         android:id="@+id/regheading"
         android:layout_width="wrap_content"
@@ -35,30 +52,13 @@
         android:paddingTop="15dp"
         android:textSize="22sp" />
 
-    <EditText
-        android:id="@+id/regpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/input_btn"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="phone"
-        android:paddingBottom="15dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:paddingTop="15dp"
-        android:textSize="22sp" />
-
     <Button
         android:id="@+id/regbtnreal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="219dp"
         android:background="@drawable/input_btn"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"

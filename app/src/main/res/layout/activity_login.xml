@@ -35,6 +35,31 @@
         android:paddingTop="15dp"
         android:textSize="22sp" />
 
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="231dp"
+        android:background="@drawable/input_btn"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/logbtn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/toregpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:text="@string/toregpage"
+        android:textColor="#ffff"
+        android:textSize="22sp" />
+
     <EditText
         android:id="@+id/logpassword"
         android:layout_width="wrap_content"
@@ -45,38 +70,11 @@
         android:background="@drawable/input_btn"
         android:ems="10"
         android:hint="Password"
-        android:inputType="phone"
+        android:inputType="textPassword"
         android:paddingBottom="15dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:paddingTop="15dp"
         android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/logbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="196dp"
-        android:background="@drawable/input_btn"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="@string/logbtn"
-        android:textColor="@color/colorPrimary"
-        android:textSize="22sp" />
-
-    <Button
-        android:id="@+id/regbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="126dp"
-        android:background="@drawable/input_btn"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="@string/regbtn"
-        android:textColor="@color/colorPrimary"
-        android:textSize="22sp" />
 </RelativeLayout>

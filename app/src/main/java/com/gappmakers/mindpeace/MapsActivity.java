@@ -6,7 +6,9 @@ import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationListener;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -51,7 +53,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,  GoogleApiClient.OnConnectionFailedListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks, com.google.android.gms.location.LocationListener,  GoogleApiClient.OnConnectionFailedListener,GoogleMap.OnMarkerClickListener, GoogleMap.OnMarkerDragListener {
     private String TAG= "MapsActivity";
     private GoogleMap mMap;
     private static final int LOCATION_REQUEST = 500;
@@ -73,6 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private PlaceAutocompleteAdapter mPlaceAutocompleteAdapter;
     private GoogleApiClient mGoogleApiClient;
     private PlaceInfo mPlace;
+    double latitude, longitude, end_latitude, end_longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -400,4 +403,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             places.release();
         }
     };
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        return false;
+    }
+
+    @Override
+    public void onMarkerDragStart(Marker marker) {
+
+    }
+
+    @Override
+    public void onMarkerDrag(Marker marker) {
+
+    }
+
+    @Override
+    public void onMarkerDragEnd(Marker marker) {
+
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+
+    }
+
+   
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
 }
