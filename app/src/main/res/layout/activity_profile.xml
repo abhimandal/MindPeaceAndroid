@@ -14,6 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:text="@string/profileheading"
+        android:textColor="#29b6f6"
         android:textSize="22sp"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="180dp" />

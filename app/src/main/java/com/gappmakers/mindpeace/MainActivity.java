@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -91,6 +92,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void MapTrip(View view) {  // activate the map
         Intent MapTrip = new Intent(this, MapsActivity.class);
         startActivity(MapTrip);
+    }
+    public void Start(View view) {  // start the trip
+        Intent starttrip = new Intent(this, MapsActivity.class);
+        startActivity(starttrip);
     }
     public void Sos(View view) {   //activate the sos
             Intent Sos = new Intent(this,SosActivity.class);

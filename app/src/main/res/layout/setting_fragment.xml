@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSetting">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/settingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/settingbtn"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/settingheading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingheading"
+        android:textColor="#29b6f6"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/setthres"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/setthres"
+        android:textColor="#29b6f6"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/setthres2"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/setthres"
+        android:layout_toEndOf="@+id/thresinput"
+        android:text="@string/setthres2"
+        android:textColor="#29b6f6"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/thresinput"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setthres"
+        android:layout_toEndOf="@+id/setthres"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#29b6f6"
+        android:textSize="15sp" />
+
+</RelativeLayout>

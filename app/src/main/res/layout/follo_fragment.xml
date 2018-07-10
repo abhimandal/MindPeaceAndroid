@@ -10,6 +10,7 @@
         android:layout_width="199dp"
         android:layout_height="45dp"
         android:text="@string/folloheading"
+        android:textColor="#29b6f6"
         android:textSize="20dp"
         android:textStyle="bold" />
     // there should be links to the names of the BEFO

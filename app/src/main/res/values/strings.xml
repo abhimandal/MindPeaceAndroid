@@ -46,5 +46,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="aboutheading">ABOUT</string>
+    <string name="setthres">Refresh Every</string>
+    <string name="setthres2">Minutes</string>
+    <string name="settingbtn">SAVE</string>
+    <string name="activatetrip">START</string>
+
 
 </resources>
