@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--&lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/tablayout_id"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="#29B6F6"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<android.support.v4.view.ViewPager&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/viewpager_id"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;&gt; //this is the whole backgroud leave it default&ndash;&gt;-->
+        <!--&lt;!&ndash;which is white&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</android.support.v4.view.ViewPager>&ndash;&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Button" />-->
+    <!--</LinearLayout>-->
+    <Button
+        android:id="@+id/Befo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="160dp"
+        android:onClick="Befo"
+        android:text="Start a new trip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="117dp"
+        android:text="Hello, Welcome to MindPeace" />
+
+    <Button
+        android:id="@+id/Follo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Befo"
+        android:layout_marginTop="242dp"
+        android:onClick="Follo"
+        android:text="Trips Following" />
+</RelativeLayout>
