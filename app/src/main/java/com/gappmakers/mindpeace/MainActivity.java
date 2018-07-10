@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void MapTrip(View view) {  // activate the map
         Intent MapTrip = new Intent(this, MapsActivity.class);
         startActivity(MapTrip);
+        
     }
     public void Start(View view) {  // start the trip
         Intent starttrip = new Intent(this, MapsActivity.class);
