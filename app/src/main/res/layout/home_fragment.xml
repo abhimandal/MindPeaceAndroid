@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -36,11 +37,11 @@
         android:id="@+id/homebtsbefo"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp"
+        android:layout_marginBottom="194dp"
         android:background="@drawable/buttonshape"
-        android:onClick="Befo"
+        android:onClick="MapTrip"
         android:text="@string/homebtsbefo"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="22dp"
         android:text="@string/homeheading"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp" />
@@ -60,12 +61,39 @@
         android:id="@+id/homebtsfollo"
         android:layout_width="233dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="242dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
         android:onClick="Follo"
         android:text="@string/homebtsfollo"
-        android:textColor="#FFFFFF"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="258dp"
+        android:text="Let your loved ones FOLLOw you, by clicking this" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="141dp"
+        android:text="To check the status of your loved one's trips, click this" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="233dp"
+        android:layout_height="205dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        app:srcCompat="@drawable/logo" />
 </RelativeLayout>

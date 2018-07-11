@@ -3,6 +3,7 @@ package com.gappmakers.mindpeace.models;
 
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
@@ -20,24 +21,13 @@ public class GetDirectionsData extends AsyncTask<Object,String,String> {
     String url;
     String googleDirectionsData;
 
-    public String getDuration() {
-        return duration;
-    }
+   private String duration, distance;
+//   public  exportdata ed;
 
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
-    public String getDistance() {
-        return distance;
-    }
-
-    public void setDistance(String distance) {
-        this.distance = distance;
-    }
-
-    String duration, distance;
     LatLng latLng;
+
+
+
     @Override
     protected String doInBackground(Object... objects) {
         mMap = (GoogleMap)objects[0];
@@ -61,26 +51,26 @@ public class GetDirectionsData extends AsyncTask<Object,String,String> {
         directionsList = parser.parseDurandDist(s);
         duration = directionsList.get("duration");
         distance= directionsList.get("distance");
+        Log.d("mama", "onClick:Duration "+duration);
+
 
         mMap.clear();
         MarkerOptions m = new MarkerOptions();
         m.position(latLng);
         m.draggable(true);
-        m.title("Duration=" +duration);
-        m.snippet("Distance" +distance);
+        m.title("Duration =" +duration);
+        m.snippet("Distance =" +distance);
         mMap.addMarker(m);
+        Log.d("mema", "onClick:Duration "+duration);
+
 
         String[] path;
         path= parser.parseDirections(s);
         displayDirection(path);
 
-//
-//        String[] directionsList;
-//        DataParser parser = new DataParser();
-//        directionsList = parser.parseDirections(s);
-//        displayDirection(directionsList);
 
     }
+
 
     public void displayDirection(String[] directionsList)
     {

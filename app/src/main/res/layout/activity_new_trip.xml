@@ -9,120 +9,102 @@
     tools:context=".NewTrip">
 
 
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="156dp"
+        android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="32dp"
+        android:text="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:text="reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
+        tools:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/sos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="77dp">
+        android:layout_height="61dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/sosbuttonshape"
+        android:onClick="Sos"
+        android:text="@string/sos"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
 
-        <TextView
-            android:id="@+id/slocation"
-            android:layout_width="342dp"
-            android:layout_height="44dp"
-            android:text="Your start location below"
-            android:textColor="#29b6f6"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="68dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:onClick="cancel"
+        android:text=" Cancel Trip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sos" />
 
-        <EditText
-            android:id="@+id/slocation1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textAutoComplete"
-            android:textColor="#29b6f6"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="129dp" />
-
-        <TextView
-            android:id="@+id/esttime"
-            android:layout_width="342dp"
-            android:layout_height="44dp"
-            android:text="Your final location below"
-            android:textColor="#29b6f6"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="186dp" />
-
-        <EditText
-            android:id="@+id/esttime1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textAutoComplete"
-            android:textColor="#29b6f6"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="252dp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="616dp"
-            android:layout_height="44dp"
-            android:text="Your estimated time duration below"
-            android:textColor="#29b6f6"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="186dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="434dp" />
-
-            <TextView
-                android:id="@+id/te"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:text="Minutes"
-                android:textColor="#29b6f6"
-                android:textSize="20dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="186dp" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/selectfollo"
-            android:layout_width="616dp"
-            android:layout_height="44dp"
-            android:text="Select FOLLOs for this trip"
-            android:textColor="#29b6f6"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="186dp" />
-    </LinearLayout>
-
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/activatetrip"
-            android:layout_width="154dp"
-            android:layout_height="52dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="75dp"
-            android:background="@drawable/buttonshape"
-            android:onClick="Start"
-            android:text="@string/activatetrip"
-            android:textColor="#ffffff"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="382dp" />
-
-    </RelativeLayout>
-
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Current Trip"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

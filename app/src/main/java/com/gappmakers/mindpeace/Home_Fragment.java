@@ -30,18 +30,7 @@ public class Home_Fragment extends Fragment{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.home_fragment,container,false);
-//        tabLayout = (TabLayout) view.findViewById(R.id.tablayout_id);
-//        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
-//        viewPager = (ViewPager) view.findViewById(R.id.viewpager_id);
-//        TABAdapter adapter = new TABAdapter(getFragmentManager());
-//        //Add Fragments
-//        adapter.AddFragment(new FragmentBefo(),"BEFO");
-//        adapter.AddFragment(new FragmentFollo(),"FOLLO");
-//        // adapter.AddFragment(new Home_Fragment(),"Notifications");
-//
-//        //Add setup
-//        viewPager.setAdapter(adapter);
-//        tabLayout.setupWithViewPager(viewPager);
+
         return view;
     }
 }

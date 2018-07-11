@@ -13,16 +13,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-//import com.gappmakers.mindpeace.models.ConfirmPage;
 import com.gappmakers.mindpeace.models.MapsActivity;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     private static final String TAG = null ;
-    //    private TabLayout tabLayout;
-//    private AppBarLayout appBarLayout;
-//    private ViewPager viewPager;
+
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private int count =0;
@@ -33,39 +30,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate:1 ");
-        // this intend should be deleted
-//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-//            startActivity(intent);
-//            finish();
 
-////
-//        tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
-//        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
-//        viewPager = (ViewPager) findViewById(R.id.viewpager_id);
-//        TABAdapter adapter = new TABAdapter(getSupportFragmentManager());
-//        //Add Fragments
-//        adapter.AddFragment(new FragmentBefo(),"BEFO");
-//        adapter.AddFragment(new FragmentFollo(),"FOLLO");
-//       // adapter.AddFragment(new Home_Fragment(),"Notifications");
-//
-//        //Add setup
-//        viewPager.setAdapter(adapter);
-//        tabLayout.setupWithViewPager(viewPager);
-//        mToggle= new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close );
-//       mDrawerLayout.addDrawerListener(mToggle);
-//       mToggle.syncState();
-//       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
-//       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
             mToggle = new ActionBarDrawerToggle(
@@ -93,27 +61,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(MapTrip);
         
     }
-//    public void GotoHome(View view) {
-//        Log.d(TAG, "onClick: onClick inside");// activate homepage
-//        Home_Fragment front_page_fragment = new Home_Fragment();
-//        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//        fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
-//        fragmentTransaction.commit();
-//
-//    }
+
 
     public void Start(View view) {  // start the trip
         Intent starttrip = new Intent(this, MapsActivity.class);
         startActivity(starttrip);
     }
-    public void Sos(View view) {   //activate the sos
-            Intent Sos = new Intent(this,SosActivity.class);
-            startActivity(Sos);
-    }
-//    public void Next(View view) {   //activate the confirmpage
-//        Intent next = new Intent(this,ConfirmPage.class);
-//        startActivity(next);
-//    }
+
+
     public void Befo(View view) {
         FragmentBefo page_fragment = new FragmentBefo();
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -127,11 +82,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragmentTransaction.commit();
     }
 
-//        public boolean onOptionsItemSelected (MenuItem item){
-//
-//            if(mToggle.onOptionsItemSelected(item)){return true;}
-//            return super.onOptionsItemSelected(item);
-//        }
 
 
 

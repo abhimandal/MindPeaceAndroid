@@ -35,7 +35,7 @@
     <string name="sosyes">Yes </string>
     <string name="sosno">No </string>
     <string name="sosheading">SEND SOS ?</string>
-    <string name="homeheading">Hello, Welcome to MindPeace</string>
+    <string name="homeheading">Hello, Welcome to </string>
     <string name="homebtsbefo">START A NEW TRIP</string>
     <string name="homebtsfollo">TRIPS FOLLOWING</string>
 
@@ -50,6 +50,9 @@
     <string name="setthres2">Minutes</string>
     <string name="settingbtn">SAVE</string>
     <string name="activatetrip">START</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

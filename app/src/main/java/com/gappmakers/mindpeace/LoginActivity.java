@@ -66,19 +66,6 @@ public class LoginActivity extends AppCompatActivity {
                 userLogin();
             }
         });
-//        mRegister.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent regintent = new Intent(LoginActivity.this,RegisterActivity.class);       without editing  2
-//                startActivity(regintent);
-//            }
-//        });
-
-        //method for user login
-
-
-
-
 
     }
 
@@ -102,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-//                            progressDialog.dismiss();
+//
                         //if the task is successfull
                         if (task.isSuccessful()) {
                             //start the profile activity

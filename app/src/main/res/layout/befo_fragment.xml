@@ -1,55 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/befo_fragment"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
 
-    <Button
-        android:id="@+id/sos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sosbuttonshape"
-        android:onClick="Sos"
-        android:text="@string/sos"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp" />
+tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:text="Please start your trip by clicking the below button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!--<Button-->
+        <!--android:id="@+id/sos"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="120dp"-->
+        <!--android:layout_marginRight="120dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/sosbuttonshape"-->
+        <!--android:onClick="Sos"-->
+        <!--android:text="@string/sos"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20dp" />-->
 
     <Button
         android:id="@+id/NewTrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/buttonshape"
-        android:onClick="NewTrip"
-        android:text="@string/NewTrip"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/MapTrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/buttonshape"
         android:onClick="MapTrip"
-        android:text="@string/MapTrip"
+        android:text="START A NEW TRIP"
         android:textColor="#FFFFFF"
+
         android:textSize="20dp"
-        tools:ignore="RtlCompat" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="HI BEFO!!!"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/MapTrip"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginRight="70dp"-->
+        <!--android:layout_marginTop="135dp"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:onClick="MapTrip"-->
+        <!--android:text="@string/MapTrip"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20dp"-->
+        <!--tools:ignore="RtlCompat" />-->
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

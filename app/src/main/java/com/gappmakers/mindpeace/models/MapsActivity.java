@@ -52,6 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 {
 
 
+    private static final String TAG = "hallo";
     private GoogleMap mMap;
     GoogleApiClient mGoogleApiClient;
     private PlaceAutocompleteAdapter mPlaceAutocompleteAdapter;
@@ -61,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     int PROXIMITY_RADIUS = 10000;
     double latitude, longitude;
     double end_latitude, end_longitude;
-    public String Distance, Duration;
+    public String Distance, Duration, Destination, Source;
     private static final LatLngBounds LAT_LNG_BOUNDS = new LatLngBounds(
             new LatLng(-40, -168), new LatLng(71, 136));
 
@@ -94,8 +95,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
     public void Next(View view) {   //activate the sos
-        Intent Sos = new Intent(this,ConfirmPage.class);
-        startActivity(Sos);
+        Intent confirm = new Intent(this,ConfirmPage.class);
+        confirm.putExtra("Distance",Distance);
+        confirm.putExtra("Duration",Duration);
+        confirm.putExtra("Source",Source);
+        confirm.putExtra("Destination",Destination);
+        startActivity(confirm);
     }
     private boolean CheckGooglePlayServices() {
         GoogleApiAvailability googleAPI = GoogleApiAvailability.getInstance();
@@ -262,9 +267,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 dataTransfer[1] = url;
                 dataTransfer[2] = new LatLng(end_latitude, end_longitude);
                 getDirectionsData.execute(dataTransfer);
-                Distance= getDirectionsData.getDistance();
-                Duration= getDirectionsData.getDuration();
-
+               // Distance = getDirectionsData.exportDistance();
+                Log.d(TAG, "onClick:Distance "+Distance);
+              //  Duration = getDirectionsData.exportDuration();
+                Log.d(TAG, "onClick:Duration "+Duration);
+                Source= getAddress(latitude,longitude);
+                Destination=getAddress(end_latitude,end_longitude);
+                Toast.makeText(this,"Please tap the destination marker for distance and duration",Toast.LENGTH_LONG).show();
 
                 break;
 
@@ -459,13 +468,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             List<Address> addresses = geocoder.getFromLocation(lat, lng, 1);
             Address obj = addresses.get(0);
             String add = obj.getAddressLine(0);
-            add = add + "\n" + obj.getCountryName();
-            add = add + "\n" + obj.getCountryCode();
+            //add = add + "\n" + obj.getCountryName();
+            //add = add + "\n" + obj.getCountryCode();
             add = add + "\n" + obj.getAdminArea();
-            add = add + "\n" + obj.getPostalCode();
-            add = add + "\n" + obj.getSubAdminArea();
-            add = add + "\n" + obj.getLocality();
-            add = add + "\n" + obj.getSubThoroughfare();
+            //add = add + "\n" + obj.getPostalCode();
+           // add = add + "\n" + obj.getSubAdminArea();
+           // add = add + "\n" + obj.getLocality();
+           // add = add + "\n" + obj.getSubThoroughfare();
 
             Log.v("IGA", "Address" + add);
             // Toast.makeText(this, "Address=>" + add,
