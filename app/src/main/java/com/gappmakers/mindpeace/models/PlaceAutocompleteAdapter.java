@@ -1,4 +1,4 @@
-package com.gappmakers.mindpeace;
+package com.gappmakers.mindpeace.models;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;

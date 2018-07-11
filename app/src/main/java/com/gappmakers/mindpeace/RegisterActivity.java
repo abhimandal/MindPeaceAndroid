@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
 
             //and open profile activity
-            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }
 
 
@@ -81,7 +81,8 @@ public class RegisterActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(RegisterActivity.this, "User Registeration Successful", Toast.LENGTH_LONG).show();
                             finish();
-                            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+                            finish();
                         } else{
 //                            //display some message here
                             Toast.makeText(RegisterActivity.this,"Registration Error",Toast.LENGTH_LONG).show();

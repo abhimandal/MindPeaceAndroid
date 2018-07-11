@@ -16,7 +16,7 @@
     <string name="logheading">Welcome to MindPeace</string>
     <string name="logemail">Email</string>
     <string name="logpassword">Password</string>
-    <string name="logbtn">Login In</string>
+    <string name="logbtn">Login</string>
     <string name="regbtn">Register</string>
     <string name="regheading">Welcome to MindPeace</string>
     <string name="regemail">Email</string>

@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private static final String TAG ="" ;
     private EditText mEmail;
     private EditText mPassword;
     private Button mLogin;
@@ -41,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
 
             //and open profile activity
-            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }
 
         mEmail = (EditText) findViewById(R.id.logemail);
@@ -105,7 +107,9 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             //start the profile activity
                             finish();
+
                             startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                            finish();
                         }
                         else{
                             //display some message here

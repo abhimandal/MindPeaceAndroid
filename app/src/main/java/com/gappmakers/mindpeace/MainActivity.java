@@ -1,14 +1,8 @@
 package com.gappmakers.mindpeace;
 
 import android.content.Intent;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +12,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+
+//import com.gappmakers.mindpeace.models.ConfirmPage;
+import com.gappmakers.mindpeace.models.MapsActivity;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -29,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //    private ViewPager viewPager;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    private int count =0;
 
 
     @Override
@@ -37,8 +34,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate:1 ");
         // this intend should be deleted
-//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-//        startActivity(intent);
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            startActivity(intent);
+//            finish();
+
 ////
 //        tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
 //        //appBarLayout = (AppBarLayout) findViewById(R.id.appbarid);
@@ -56,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //       mDrawerLayout.addDrawerListener(mToggle);
 //       mToggle.syncState();
 //       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
 
 //       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -68,21 +67,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //            }
 //        });
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mToggle = new ActionBarDrawerToggle(
-                this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.addDrawerListener(mToggle);
-        mToggle.syncState();
+            mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+            mToggle = new ActionBarDrawerToggle(
+                    this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            mDrawerLayout.addDrawerListener(mToggle);
+            mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        //--------------------set the initial fragment-------------------
+            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+            //--------------------set the initial fragment-------------------
 
-        Home_Fragment front_page_fragment = new Home_Fragment();
-        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
-        fragmentTransaction.commit();
-      //  getSupportActionBar().setTitle("Home");
+            Home_Fragment front_page_fragment = new Home_Fragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, front_page_fragment);
+            fragmentTransaction.commit();
+            //  getSupportActionBar().setTitle("Home");
 
     }
     public void NewTrip(View view) {  // create new trip
@@ -94,6 +93,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(MapTrip);
         
     }
+//    public void GotoHome(View view) {
+//        Log.d(TAG, "onClick: onClick inside");// activate homepage
+//        Home_Fragment front_page_fragment = new Home_Fragment();
+//        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//        fragmentTransaction.replace(R.id.fragment_container,front_page_fragment);
+//        fragmentTransaction.commit();
+//
+//    }
+
     public void Start(View view) {  // start the trip
         Intent starttrip = new Intent(this, MapsActivity.class);
         startActivity(starttrip);
@@ -102,6 +110,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent Sos = new Intent(this,SosActivity.class);
             startActivity(Sos);
     }
+//    public void Next(View view) {   //activate the confirmpage
+//        Intent next = new Intent(this,ConfirmPage.class);
+//        startActivity(next);
+//    }
     public void Befo(View view) {
         FragmentBefo page_fragment = new FragmentBefo();
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
